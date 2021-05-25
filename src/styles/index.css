@@ -374,14 +374,6 @@ a {
   display: none !important;
 }
 
-.display-menu {
-  display: block;
-}
-
-.hide-menu {
-  display: none;
-}
-
 .nav-menu {
   position: absolute;
   width: 100vw;
