@@ -7,7 +7,10 @@ const linkedinContainer = document.getElementById("linkedin-container");
 const linkedin = document.getElementById("linkedin");
 const menu = document.getElementById("menu-bars");
 const cross = document.getElementById("cross-menu");
+const mobileMenu = document.getElementById("mobile-menu");
 const navMenu = document.getElementById("menu");
+const menuItems = document.querySelectorAll(".mobile-menu-item");
+let menuIsOpened = false;
 githubContainer.addEventListener("mouseover", (e) => {
   github.classList.remove("inner-info");
   github.classList.add("contact-visibility");
@@ -38,20 +41,32 @@ emailContainer.addEventListener("mouseout", (e) => {
   email.classList.add("inner-info");
 });
 
-menu.addEventListener("click", (e) => {
-  menu.classList.add("hide");
-  menu.classList.remove("show");
-  cross.classList.remove("hide");
-  cross.classList.add("show");
+const openMenu = () => {
+  mobileMenu.classList.add("hide");
+  mobileMenu.classList.remove("show");
   navMenu.classList.remove("hide");
   navMenu.classList.add("show");
-});
+  menuIsOpened = true;
+};
 
-cross.addEventListener("click", (e) => {
-  cross.classList.add("hide");
-  cross.classList.remove("show");
-  menu.classList.remove("hide");
-  menu.classList.add("show");
+const closeMenu = () => {
   navMenu.classList.remove("show");
   navMenu.classList.add("hide");
+  mobileMenu.classList.add("show");
+  mobileMenu.classList.remove("hide");
+  menuIsOpened = false;
+};
+
+menu.addEventListener("click", openMenu);
+
+cross.addEventListener("click", closeMenu);
+
+window.addEventListener("scroll", (e) => {
+  if (menuIsOpened) {
+    window.scrollTo(0, 0);
+  }
+});
+
+menuItems.forEach((element) => {
+  element.addEventListener("click", closeMenu);
 });
