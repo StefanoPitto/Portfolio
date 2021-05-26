@@ -421,7 +421,7 @@ a {
     margin: auto 0;
     margin-bottom: 30px;
   }
-  .info-proyect::touch-action > .description-proyect {
+  .info-proyect:focus > .description-proyect {
     transition: all 0.4s;
     visibility: visible;
     background-color: white;
