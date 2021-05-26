@@ -33,7 +33,7 @@
           </ul>
         </div>
       </nav>
-      <nav class="mobile-menu">
+      <nav class="mobile-menu" id="mobile-menu-container">
         <div class="inner-mobile-menu-container show" id="mobile-menu">
           <div class="inner-nav-menu">
             <i class="fas fa-bars" id="menu-bars"></i>
@@ -42,19 +42,19 @@
         </div>
         <div class="nav-menu hide" id="menu">
           <div class="inner-open-menu">
-          <i class="fas fa-times close-menu" id="cross-menu"></i>
-          <ul>
-            <li class="mobile-menu-item">
-              <a href="#about-me">About me</a>
-            </li>
-            <li class="mobile-menu-item">
-              <a href="#skills">Skills</a>
-            </li>
-            <li class="mobile-menu-item">
-              <a href="#contact">Contact</a>
-            </li>
-            <li class="mobile-menu-item"><a href="#my-work">Work</a></li>
-          </ul>
+            <i class="fas fa-times close-menu" id="cross-menu"></i>
+            <ul>
+              <li class="mobile-menu-item">
+                <a href="#about-me">About me</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a href="#skills">Skills</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a href="#contact">Contact</a>
+              </li>
+              <li class="mobile-menu-item"><a href="#my-work">Work</a></li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -62,11 +62,7 @@
     <section class="main-section-container">
       <div class="my-presentation-container">
         <div class="photo-container">
-          <img
-            src="src/images/FotoCV.PNG"
-            alt=""
-            class="personal-photo"
-          />
+          <img src="src/images/FotoCV.PNG" alt="" class="personal-photo" />
         </div>
         <div class="personal-info-container">
           <h1>Stefano Pitto</h1>
@@ -121,21 +117,25 @@
         <div class="underline-effect"></div>
       </div>
       <div class="proyects-container">
-          <div class="info-proyect spotify-proyect">
-            <div class="description-proyect">
-              <a href="https://github.com/StefanoPitto/SpotifyClone" class="">
-                This was one of my practice proyects! I did a Spofity's Website
-                clone.
-              </a>
+        <div class="my-proyects">
+          <div class="image-my-proyect">
+            <img class="proyect-img" src="https://www.scdn.co/i/_global/open-graph-default.png" alt="">
+            <div class="my-proyect-description">
+              This is a Spotify's Website clone I did to practice!
             </div>
           </div>
-            <div class="info-proyect mall-proyect">
-              <div class="description-proyect">
-                <a href="https://stefanopitto.github.io" class="">
-                  I did a landing page!
-                </a>
-              </div>
-            </div>
+          <a href="https://stefanopitto.github.io/"><span class="visit-btn">Visit site</span></a>
+        </div>
+        <div class="my-proyects">
+          <div class="image-my-proyect mall-proyect">
+            <img src="https://www.malloftheemirates.com/-/media/logos-all-malls/24-06/og/moe-eng.png" alt="">
+            <p class="my-proyect-description">
+              Landing page I did for a Professional HTML and CSS course.
+            </p>
+          </div>
+          <a href="https://github.com/StefanoPitto/SpotifyClone"><span class="visit-btn">Visit site</span></a>
+        </div>   
+      </div>
           </div>
         </div>
     </section>
@@ -154,7 +154,7 @@
           <a
             id="linkedin"
             class="inner-info"
-            href="linkedin.com/in/stefanopitto"
+            href="https://www.linkedin.com/in/stefanopitto/"
             >linkedin.com/in/stefanopitto</a
           >
         </div>

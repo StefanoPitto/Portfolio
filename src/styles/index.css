@@ -43,6 +43,10 @@ a {
   color: white;
 }
 
+.background-nav {
+  background-color: rgb(0, 0, 0);
+}
+
 /*Navigation bar*/
 
 .navigation-bar {
@@ -242,48 +246,64 @@ a {
 .proyects-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   max-width: 1200px;
-  margin-top: 50px;
+  margin-top: 150px;
+  padding: 20px 30px;
 }
 
-.info-proyect {
-  background-size: cover;
-  max-width: 355px;
-  width: 100%;
-  min-height: 220px;
-  margin: 30px;
-  background-repeat: no-repeat;
-  position: relative;
+.my-proyects {
+  background-color: black;
+  max-width: 350px;
+  height: fit-content;
+  object-fit: cover;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.spotify-proyect {
-  background-image: url("https://www.scdn.co/i/_global/open-graph-default.png");
-}
-
-.description-proyect {
+.my-proyect-description {
+  position: absolute;
   visibility: hidden;
+  height: 70px;
+}
+
+.image-my-proyect {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+}
+.my-proyects > a {
+  text-decoration: none;
+  color: white;
+  align-self: center;
+  padding: 25px 0;
 }
 
-.description-proyect > a {
-  color: #000;
+.visit-btn {
+  color: #000000;
+  background-color: #ffffff;
+  padding: 10px 50px;
+  border-radius: 50px;
 }
 
-.info-proyect:hover > .description-proyect {
-  transition: all 0.4s;
-  visibility: visible;
-  background-color: white;
-  height: 220px;
+.image-my-proyect {
+  width: 350px;
+  height: 200px;
+}
+
+.image-my-proyect > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.my-proyect-description {
+  position: absolute;
 }
 
 .mall-proyect {
-  background-color: white;
-  background-image: url("https://www.malloftheemirates.com/-/media/logos-all-malls/24-06/og/moe-eng.png");
+  background-color: #ffffff;
 }
 
 /*My Work*/
@@ -309,7 +329,6 @@ a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 60px;
 }
 
 .social-media-container > div {
@@ -320,6 +339,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 30px 20px;
 }
 
 .contact-icon {
@@ -410,6 +430,7 @@ a {
   }
   .mobile-menu {
     display: block;
+    position: fixed;
   }
 
   .my-presentation-container {
@@ -426,6 +447,10 @@ a {
     visibility: visible;
     background-color: white;
     height: 220px;
+  }
+
+  .my-proyects {
+    margin-bottom: 30px;
   }
 }
 

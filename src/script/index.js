@@ -10,6 +10,7 @@ const cross = document.getElementById("cross-menu");
 const mobileMenu = document.getElementById("mobile-menu");
 const navMenu = document.getElementById("menu");
 const menuItems = document.querySelectorAll(".mobile-menu-item");
+const mobileMenuContainer = document.getElementById("mobile-menu-container");
 let menuIsOpened = false;
 githubContainer.addEventListener("mouseover", (e) => {
   github.classList.remove("inner-info");
@@ -64,6 +65,8 @@ cross.addEventListener("click", closeMenu);
 window.addEventListener("scroll", (e) => {
   if (menuIsOpened) {
     window.scrollTo(0, 0);
+  } else {
+    mobileMenuContainer.classList.add("background-nav");
   }
 });
 
