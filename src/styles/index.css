@@ -272,7 +272,17 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 350px;
+  height: 200px;
+  position: relative;
 }
+
+.image-my-proyect > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .my-proyects > a {
   text-decoration: none;
   color: white;
@@ -287,19 +297,25 @@ a {
   border-radius: 50px;
 }
 
-.image-my-proyect {
-  width: 350px;
-  height: 200px;
-}
-
-.image-my-proyect > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .my-proyect-description {
+  visibility: hidden;
   position: absolute;
+}
+
+.text-description {
+  text-align: center;
+}
+
+.image-my-proyect:hover > .my-proyect-description {
+  cursor: pointer;
+  visibility: visible;
+  color: #000000;
+  background-color: #ffffff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mall-proyect {
