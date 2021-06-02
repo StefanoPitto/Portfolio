@@ -257,7 +257,7 @@ a {
   max-width: 350px;
   height: fit-content;
   object-fit: cover;
-  margin-right: 20px;
+  margin: 10px 20px;
   display: flex;
   flex-direction: column;
 }
@@ -322,6 +322,9 @@ a {
   background-color: #ffffff;
 }
 
+.cart-proyect {
+  background-color: #ffffff;
+}
 /*My Work*/
 /*Contact Information*/
 
